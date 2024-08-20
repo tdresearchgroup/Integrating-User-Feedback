@@ -1,0 +1,86 @@
+[
+    {
+        "id": "MDExOlB1bGxSZXF1ZXN0MTY3NzMwNDQ4",
+        "title": "Use storage access framework for backing up the wallet.",
+        "bodyText": "This gets rid of the WRITE_EXTERNAL_STORAGE permission. Users can still save to external storage via the SAF dialog, but actually this is discouraged as almost no devices have SD cards today. Much better to use cloud storage these days (e.g. Google Drive).\nIt should be noted that saving to email attachment is not supported any more either.\nNote also that restoring wallets didn't change, so you can still restore from all old locations, including Google Drive and SD cards. To change this is planned for a future PR.",
+        "createdAt": "2018-02-07T15:50:00Z",
+        "merged": true,
+        "mergedAt": "2018-02-14T15:34:57Z",
+        "additions": 152,
+        "deletions": 464,
+        "changedFiles": 42,
+        "timeToMerge": 10064.95
+    },
+    {
+        "id": "MDExOlB1bGxSZXF1ZXN0MTczMTg0NDM5",
+        "title": "Git-ignore Gradle wrapper files.",
+        "bodyText": "Android Studio urges you to use Gradle wrapper, and puts these files into the project if you do.\nLet's ignore them. Everyone can set up Gradle wrapper with two clicks if wanted.",
+        "createdAt": "2018-03-06T15:04:24Z",
+        "merged": true,
+        "mergedAt": "2018-07-31T08:55:46Z",
+        "additions": 3,
+        "deletions": 0,
+        "changedFiles": 1,
+        "timeToMerge": 211311.3666666667
+    },
+    {
+        "id": "MDExOlB1bGxSZXF1ZXN0MjY1NzE0Nzkx",
+        "title": "WalletActivity: Make balance (and sometimes current address) scroll\u2026",
+        "bodyText": "\u2026away with scrolling the transactions list. It will quickly return if you start scrolling up again.",
+        "createdAt": "2019-03-29T13:26:21Z",
+        "merged": true,
+        "mergedAt": "2019-03-30T14:03:18Z",
+        "additions": 60,
+        "deletions": 18,
+        "changedFiles": 5,
+        "timeToMerge": 1476.95
+    },
+    {
+        "id": "PR_kwDOADtPdc4ruRMC",
+        "title": ".gitlab-ci.yml: Set up GitLab CI.",
+        "bodyText": "",
+        "createdAt": "2021-09-14T10:45:37Z",
+        "merged": true,
+        "mergedAt": "2021-09-15T07:51:00Z",
+        "additions": 21,
+        "deletions": 0,
+        "changedFiles": 1,
+        "timeToMerge": 1265.3833333333
+    },
+    {
+        "id": "PR_kwDOADtPdc4rxNQk",
+        "title": "gradle.properties: Enable D8 bytecode desugaring.",
+        "bodyText": "This is mainly to work around this issue:\nhttps:\/\/issuetracker.google.com\/u\/0\/issues\/72872257",
+        "createdAt": "2021-09-15T08:04:00Z",
+        "merged": true,
+        "mergedAt": "2021-09-15T17:25:18Z",
+        "additions": 3,
+        "deletions": 0,
+        "changedFiles": 2,
+        "timeToMerge": 561.3
+    },
+    {
+        "id": "PR_kwDOADtPdc4ry_Vl",
+        "title": ".gitlab-ci.yml: Support OpenJDK 11 too.",
+        "bodyText": "",
+        "createdAt": "2021-09-15T17:48:01Z",
+        "merged": true,
+        "mergedAt": "2021-09-16T22:32:48Z",
+        "additions": 6,
+        "deletions": 3,
+        "changedFiles": 2,
+        "timeToMerge": 1724.7833333333
+    },
+    {
+        "id": "PR_kwDOADtPdc5FL05i",
+        "title": "settings.gradle, README.md: declare a maximum Gradle version",
+        "bodyText": "I chose to declare an open upper bound (rather than closed) so that future maintenance releases in the 6.9.x series would automatically be included in the supported versions.",
+        "createdAt": "2022-12-12T12:21:22Z",
+        "merged": true,
+        "mergedAt": "2022-12-12T15:31:30Z",
+        "additions": 5,
+        "deletions": 4,
+        "changedFiles": 2,
+        "timeToMerge": 190.1333333333
+    }
+]
